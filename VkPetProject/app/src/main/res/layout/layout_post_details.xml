@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/detailsPhoto"
+            android:layout_width="@dimen/comment_person_photo_diameter"
+            android:layout_height="@dimen/comment_person_photo_diameter"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/default_value_ten"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detailsName"
+            style="@style/PostDetailsNameStyle"
+            app:layout_constraintStart_toEndOf="@+id/detailsPhoto"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Клим Окунев" />
+
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="@dimen/post_download_params"
+            android:layout_height="@dimen/post_download_params"
+            android:layout_marginTop="@dimen/default_value_ten"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            android:contentDescription="@string/download_button_description"
+            android:src="@drawable/ic_download"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dateOfDetails"
+            style="@style/PostDetailsStyle"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size_fourteen"
+            app:layout_constraintStart_toEndOf="@+id/detailsPhoto"
+            app:layout_constraintTop_toBottomOf="@+id/detailsName"
+            tools:text="24 июн в 14:09" />
+
+        <TextView
+            android:id="@+id/detailsText"
+            style="@style/PostDetailsStyle"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailsPhoto"
+            tools:text="Если бы мы запрашивали модель через @Inject, то мы бы просто получили инстанс вью модели (т.к. она уже находится в графе зависимостей) и она бы никак не была бы связана с жизненным циклом активити или фрагментом и не смогла бы “пережить” например переворот экрана.Чтобы это работало нам необходимо, чтобы создание происходило через фабрику." />
+
+        <ImageView
+            android:id="@+id/detailsPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_value_five"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/details_picture_description"
+            app:layout_constraintTop_toBottomOf="@id/detailsText"
+            tools:src="@drawable/ic_content_photo" />
+
+        <ImageView
+            android:id="@+id/detailsLike"
+            style="@style/ButtonDetailsStyle"
+            android:layout_marginStart="@dimen/post_margin_fourteen"
+            android:contentDescription="@string/like_comment_description"
+            android:src="@drawable/ic_like_svg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailsPicture" />
+
+        <TextView
+            android:id="@+id/amountOfDetailsLikes"
+            style="@style/ButtonValueDetailsStyle"
+            android:layout_marginTop="@dimen/post_margin_fourteen"
+            app:layout_constraintStart_toEndOf="@+id/detailsLike"
+            app:layout_constraintTop_toBottomOf="@id/detailsPicture"
+            tools:text="33" />
+
+        <ImageView
+            android:id="@+id/detailsShare"
+            style="@style/ButtonDetailsStyle"
+            android:layout_marginStart="@dimen/post_value_twenty"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/details_share_description"
+            android:src="@drawable/ic_repost_svg"
+            app:layout_constraintStart_toEndOf="@id/amountOfDetailsLikes"
+            app:layout_constraintTop_toBottomOf="@id/detailsPicture" />
+
+        <TextView
+            android:id="@+id/amountOfDetailsShares"
+            style="@style/ButtonValueDetailsStyle"
+            android:layout_marginTop="@dimen/post_margin_fourteen"
+            app:layout_constraintStart_toEndOf="@+id/detailsShare"
+            app:layout_constraintTop_toBottomOf="@id/detailsPicture"
+            tools:text="33" />
+
+        <ImageView
+            android:id="@+id/detailsView"
+            android:layout_width="@dimen/post_value_sixteen"
+            android:layout_height="@dimen/post_value_sixteen"
+            android:layout_marginTop="@dimen/post_value_sixteen"
+            android:layout_marginEnd="@dimen/default_value_five"
+            android:contentDescription="@string/details_views_description"
+            android:src="@drawable/ic_view_svg"
+            app:layout_constraintEnd_toStartOf="@id/amountOfDetailsViews"
+            app:layout_constraintTop_toBottomOf="@id/detailsPicture" />
+
+        <TextView
+            android:id="@+id/amountOfDetailsViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/post_margin_fourteen"
+            android:layout_marginEnd="@dimen/post_value_twenty"
+            android:textSize="@dimen/text_size_fourteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailsPicture"
+            tools:text="33" />
+
+        <View
+            android:id="@+id/detailsDivider"
+            style="@style/ThickDividerStyle"
+            android:layout_marginTop="@dimen/post_margin_divider"
+            android:paddingBottom="@dimen/post_value_twenty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailsPicture" />
+
+        <TextView
+            android:id="@+id/amountOfDetailsComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/post_margin_fourteen"
+            android:layout_marginTop="@dimen/default_value_ten"
+            android:paddingBottom="@dimen/post_value_twenty"
+            android:textSize="@dimen/text_size_fourteen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailsDivider"
+            tools:text="55 КОММЕНТАРИЕВ" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/commentShimmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/post_margin_fourteen"
+            android:layout_marginTop="@dimen/default_value_ten"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailsDivider"
+            android:layout_marginBottom="@dimen/default_value_twenty">
+
+            <TextView
+                android:id="@+id/shimmerAmountOfDetailsComments"
+                android:background="@drawable/bg_rounded_shimmer_view"
+                android:layout_width="135dp"
+                android:layout_height="15dp" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

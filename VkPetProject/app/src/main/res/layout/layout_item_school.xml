@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/schoolType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_value_ten"
+        android:layout_marginTop="@dimen/default_value_ten"
+        android:layout_marginEnd="@dimen/default_value_ten"
+        android:text="@string/school"
+        android:textAlignment="viewStart"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_twelve" />
+
+    <TextView
+        android:id="@+id/schoolName"
+        style="@style/SchoolStyle"
+        tools:text="Лицей №1 им. А.С. Пушкина '22" />
+
+    <TextView
+        android:id="@+id/townAndYear"
+        style="@style/SchoolStyle"
+        tools:text="Брянск, 2013-2017" />
+</LinearLayout>

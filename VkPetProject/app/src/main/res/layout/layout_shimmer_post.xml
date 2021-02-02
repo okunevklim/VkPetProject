@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shimmerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="25dp"
+    android:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/fakeImage"
+            style="@style/LoadingViewStyle"
+            android:layout_marginTop="@dimen/default_value_ten"
+            android:background="@drawable/bg_rounded_shimmer_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shadow="false" />
+
+        <TextView
+            android:id="@+id/fakeGroupName"
+            style="@style/LoadingTextStyle"
+            android:layout_width="@dimen/default_zero"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/loading_margin_fifteen"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            android:background="@drawable/bg_rounded_shimmer_view"
+            app:layout_constraintStart_toEndOf="@id/fakeImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/LoadingTextStyle"
+            android:layout_width="@dimen/default_zero"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginEnd="@dimen/loading_date_margin_end"
+            android:background="@drawable/bg_rounded_shimmer_view"
+            app:layout_constraintBottom_toBottomOf="@+id/fakeImage"
+            app:layout_constraintStart_toEndOf="@+id/fakeImage"
+            app:layout_constraintTop_toBottomOf="@+id/fakeGroupName" />
+
+        <TextView
+            android:id="@+id/fakeDescriptionText"
+            style="@style/LoadingTextStyle"
+            android:layout_width="@dimen/default_zero"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginEnd="@dimen/loading_text_margin_end"
+            android:layout_marginTop="@dimen/default_value_ten"
+            android:background="@drawable/bg_rounded_shimmer_view"
+            app:layout_constraintBottom_toTopOf="@id/fakePostImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fakeImage" />
+
+        <TextView
+            android:id="@+id/fakePostImage"
+            style="@style/LoadingTextStyle"
+            android:layout_width="@dimen/default_zero"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginEnd="@dimen/loading_photo_margin_end"
+            android:layout_marginTop="@dimen/default_value_ten"
+            android:background="@drawable/bg_rounded_shimmer_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fakeDescriptionText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

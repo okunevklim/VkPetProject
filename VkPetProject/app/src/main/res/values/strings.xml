@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">VK Client</string>
+    <string name="package_name">vk</string>
+    <string name="group_name">Reddit</string>
+    <string name="post_photo_description">картинка поста</string>
+    <string name="like_btn_description">поставить лайк</string>
+    <string name="comment_btn_description">оставить комментарий</string>
+    <string name="share_btn_description">поделиться</string>
+    <string name="post_views">10,5K</string>
+    <string name="post_menu_btn_description">открыть меню поста</string>
+    <string name="post_view_description">количество просмотров поста</string>
+    <string name="section_news">Новости</string>
+    <string name="section_liked">Избранное</string>
+    <string name="section_profile">Профиль</string>
+    <string name="error_text">Произошла ошибка при загрузке данных. Пожалуйста, попробуйте ещё раз</string>
+    <string name="error_text_automatic">Произошла ошибка при загрузке данных. Соединение восстановится автоматически</string>
+    <string name="to_retry">Повторить</string>
+    <string name="today">Сегодня</string>
+    <string name="today_last_seen">сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="yesterday_last_seen">вчера</string>
+    <string name="login_vk_button">ВОЙТИ ЧЕРЕЗ ВК</string>
+    <string name="image_saved_to_gallery">Image saved to gallery!</string>
+    <integer name="com_vk_sdk_AppId">7640949</integer>
+
+    <!--fragment_new_details.xml-->
+    <string name="text_input_hint">  Ваш комментарий</string>
+    <string name="text_input_post_hint">Что у вас нового?</string>
+
+    <!--NewsFragment-->
+    <string name="positive_button">OK</string>
+    <string name="title">ОШИБКА</string>
+    <string name="attention">ВНИМАНИЕ</string>
+    <string name="alert_msg">При обработке запроса произошла ошибка</string>
+    <string name="loading_db_failed">error while loading data from db</string>
+    <string name="creating_post_failed">Пост не опубликован</string>
+
+    <!--Details-->
+    <string name="alert_comments_msg">При загрузке комментариев произошла ошибка</string>
+    <string name="alert_loading_posts">Проверьте соединение с интернетом и повторите попытку</string>
+    <string name="alert_post_comment_msg">При отправке комментария произошла ошибка</string>
+    <string name="successful_comment_toast">Комментарий успешно опубликован</string>
+    <string name="details_picture_description">картинка поста</string>
+    <string name="details_share_description">поделиться изображением</string>
+    <string name="details_views_description">количество просмотров поста</string>
+    <string name="download_button_description">скачать фото поста</string>
+
+    <!--InputFragment-->
+    <string name="successful_post_toast">Пост добавлен на Вашу страницу</string>
+    <string name="alert_post_msg">При отправке поста произошла ошибка</string>
+    <string name="new_post">новая запись</string>
+    <string name="cancel_button_description">отменить написание поста</string>
+    <string name="send_button_description">отправить пост</string>
+
+    <!--LoginActivity-->
+    <string name="token">token</string>
+    <string name="auth_cancelled">Авторизация отменена</string>
+
+    <!--Helpers-->
+    <string name="choosing_title">Choose an app</string>
+    <string name="authority">com.example.flexpost.provider</string>
+    <string name="cache_path">images</string>
+    <string name="file_name">image.png</string>
+    <string name="file_path">images/image.png</string>
+
+    <!--PostPhotoLayout-->
+    <string name="thousand">K</string>
+    <string name="million">KK</string>
+
+    <!--layout_item_comment.xml-->
+    <string name="like_comment_description">Like this comment</string>
+
+    <!--fragment_profile.xml-->
+    <string name="town">Город:</string>
+    <string name="school">Школа</string>
+    <string name="university">ВУЗ</string>
+    <string name="country">Страна:</string>
+    <string name="followers">Количество подписчиков:</string>
+    <string name="education">Образование:</string>
+    <string name="career">Карьера:</string>
+    <string name="about">О себе:</string>
+    <string name="birthday_date">День рождения:</string>
+
+    <!--SnackBar-->
+    <string name="post_deleted">Пост успешно удален</string>
+    <string name="post_hidden">Пост успешно скрыт из ленты</string>
+    <string name="disconnected">Соединение отсутствует</string>
+    <string name="no_internet_title">Отсутствует подключение к Интернету</string>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shimmerProfilePostLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/shimmer_profile_margin_twenty_five"
+    android:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/fakePostImage"
+            style="@style/LoadingViewStyle"
+            android:layout_marginTop="@dimen/shimmer_profile_twenty"
+            android:background="@drawable/bg_rounded_shimmer_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shadow="false" />
+
+        <TextView
+            android:id="@+id/fakePostName"
+            style="@style/LoadingTextStyle"
+            android:layout_width="@dimen/default_zero"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/shimmer_profile_margin_twenty_five"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            android:background="@drawable/bg_rounded_shimmer_view"
+            app:layout_constraintStart_toEndOf="@id/fakePostImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fakePostDate"
+            style="@style/LoadingTextStyle"
+            android:layout_width="@dimen/default_zero"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/shimmer_profile_fifteen"
+            android:layout_marginEnd="@dimen/loading_date_margin_end"
+            android:background="@drawable/bg_rounded_shimmer_view"
+            app:layout_constraintStart_toEndOf="@+id/fakePostImage"
+            app:layout_constraintTop_toBottomOf="@+id/fakePostName" />
+
+        <TextView
+            android:id="@+id/fakePostContent"
+            style="@style/LoadingTextStyle"
+            android:layout_width="@dimen/default_zero"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/shimmer_profile_thirty"
+            android:layout_marginEnd="@dimen/loading_text_margin_end"
+            android:background="@drawable/bg_rounded_shimmer_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fakePostDate" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

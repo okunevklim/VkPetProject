@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/error_image_layout_width"
+        android:layout_height="@dimen/error_image_layout_height"
+        android:layout_marginBottom="@dimen/error_margin_bottom"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/error_text"
+        android:maxWidth="@dimen/error_image_max_width"
+        android:src="@drawable/ic_load"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/errorText"
+        style="@style/ErrorTextStyle"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/doubled_default_margin"
+        android:text="@string/error_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/retryButton"
+        style="@style/ErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/default_value_ten"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/error_text_padding"
+        android:text="@string/to_retry"
+        android:textAllCaps="true"
+        android:textColor="@color/selected_tab_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

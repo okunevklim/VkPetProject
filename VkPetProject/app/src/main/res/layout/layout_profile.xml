@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/profile_margin_fifteen">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="@dimen/profile_photo_params"
+            android:layout_height="@dimen/profile_photo_params"
+            android:layout_marginStart="@dimen/default_value_ten"
+            app:layout_constraintBottom_toTopOf="@id/profileHome"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/profileName"
+            style="@style/ProfileNameStyle"
+            app:layout_constraintBottom_toTopOf="@id/profileLastSeen"
+            app:layout_constraintStart_toEndOf="@id/profilePhoto"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Клим Окунев" />
+
+        <TextView
+            android:id="@+id/profileLastSeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:textAlignment="viewStart"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/text_size_sixteen"
+            app:layout_constraintStart_toEndOf="@id/profilePhoto"
+            app:layout_constraintTop_toBottomOf="@id/profileName"
+            tools:text="last seen 2 hours ago" />
+
+        <View
+            android:id="@+id/profilePhotoDivider"
+            style="@style/ThickDividerStyle"
+            android:layout_marginTop="@dimen/default_value_ten"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profilePhoto" />
+
+        <TextView
+            android:id="@+id/profileHome"
+            style="@style/ProfileFieldsStyle"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/profile_margin_fifteen"
+            android:text="@string/town"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profilePhoto" />
+
+        <TextView
+            android:id="@+id/profileHomeText"
+            style="@style/ProfileFieldsStyle"
+            android:layout_marginStart="@dimen/default_value_five"
+            android:layout_marginTop="@dimen/profile_margin_fifteen"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            app:layout_constraintStart_toEndOf="@id/profileHome"
+            app:layout_constraintTop_toBottomOf="@id/profilePhoto"
+            tools:text="Moscow" />
+
+        <TextView
+            android:id="@+id/profileCountryPicture"
+            style="@style/ProfileFieldsStyle"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/default_value_five"
+            android:text="@string/country"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileHome" />
+
+        <TextView
+            android:id="@+id/profileCountryText"
+            style="@style/ProfileFieldsStyle"
+            android:layout_marginStart="@dimen/default_value_five"
+            android:layout_marginTop="@dimen/default_value_five"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            app:layout_constraintStart_toEndOf="@id/profileCountryPicture"
+            app:layout_constraintTop_toBottomOf="@id/profileHomeText"
+            tools:text="Russia" />
+
+        <TextView
+            android:id="@+id/profileBDayText"
+            style="@style/ProfileFieldsStyle"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/default_value_five"
+            android:text="@string/birthday_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileCountryPicture" />
+
+        <TextView
+            android:id="@+id/profileBDayNumbers"
+            style="@style/ProfileFieldsStyle"
+            android:layout_marginStart="@dimen/default_value_five"
+            android:layout_marginTop="@dimen/default_value_five"
+            app:layout_constraintStart_toEndOf="@id/profileBDayText"
+            app:layout_constraintTop_toBottomOf="@id/profileCountryText"
+            tools:text="21.02.2020" />
+
+        <TextView
+            android:id="@+id/profileFollowersText"
+            style="@style/ProfileFieldsStyle"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/default_value_five"
+            android:text="@string/followers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileBDayText" />
+
+        <TextView
+            android:id="@+id/profileFollowersNumbers"
+            style="@style/ProfileFieldsStyle"
+            android:layout_marginStart="@dimen/default_value_five"
+            android:layout_marginTop="@dimen/default_value_five"
+            app:layout_constraintStart_toEndOf="@id/profileFollowersText"
+            app:layout_constraintTop_toBottomOf="@id/profileBDayNumbers"
+            tools:text="165" />
+
+        <View
+            android:id="@+id/profileInfoDivider"
+            style="@style/ThickDividerStyle"
+            android:layout_marginTop="@dimen/default_value_ten"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileFollowersText" />
+
+        <TextView
+            android:id="@+id/profileEducation"
+            style="@style/ProfileSectionStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/profile_margin_twenty"
+            android:text="@string/education"
+            android:textAlignment="viewStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileFollowersText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/profileEducationRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_value_five"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            android:paddingBottom="@dimen/default_value_ten"
+            android:textIsSelectable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileEducation" />
+
+        <TextView
+            android:id="@+id/profileCareer"
+            style="@style/ProfileSectionStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/default_value_five"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            android:text="@string/career"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileEducationRecycler" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/profileCareerRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_value_five"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileCareer" />
+
+        <TextView
+            android:id="@+id/profileAbout"
+            style="@style/ProfileSectionStyle"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/default_value_ten"
+            android:text="@string/about"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileCareerRecycler" />
+
+        <TextView
+            android:id="@+id/profileAboutText"
+            android:layout_width="@dimen/default_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/profile_margin_twenty"
+            android:layout_marginTop="@dimen/profile_margin_fourteen"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/text_size_fourteen"
+            app:layout_constraintBottom_toTopOf="@id/profileAboutDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/profileAbout"
+            app:layout_constraintTop_toBottomOf="@+id/profileCareerRecycler"
+            tools:text="Я пришел из магазина домой, задумался, а все ли я сделал так и почему не поступил никак иначе? Тоска одолевала меня последующие несколько дней, связывая меня с непониманием количества новой информации, полученной мною на собеседовании." />
+
+        <View
+            android:id="@+id/profileAboutDivider"
+            style="@style/FatDividerStyle"
+            android:layout_marginTop="@dimen/profile_margin_twenty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileAboutText" />
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/photoToSendPost"
+            android:layout_width="@dimen/profile_comment_logo_params"
+            android:layout_height="@dimen/profile_comment_logo_params"
+            android:layout_marginStart="@dimen/default_value_ten"
+            app:layout_constraintBottom_toTopOf="@id/profilePostDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileAboutDivider" />
+
+        <TextView
+            android:id="@+id/inputText"
+            android:layout_width="@dimen/default_zero"
+            android:layout_height="@dimen/profile_height_thirty"
+            android:layout_marginStart="@dimen/default_value_ten"
+            android:layout_marginTop="@dimen/default_value_ten"
+            android:layout_marginEnd="@dimen/default_value_ten"
+            android:background="@drawable/bg_rounded_post_view"
+            android:gravity="center"
+            android:hint="@string/text_input_post_hint"
+            android:textAlignment="center"
+            android:textColorHint="@color/input_text_color"
+            android:textSize="@dimen/text_size_fourteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/photoToSendPost"
+            app:layout_constraintTop_toBottomOf="@id/profileAboutDivider" />
+
+        <View
+            android:id="@+id/profilePostDivider"
+            style="@style/FatDividerStyle"
+            android:layout_marginTop="@dimen/default_value_ten"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

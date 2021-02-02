@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/closeInputText"
+        style="@style/InputActivityButtonStyle"
+        android:layout_marginStart="@dimen/default_value_ten"
+        android:contentDescription="@string/cancel_button_description"
+        android:src="@drawable/ic_cancel_svg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hostName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_margin_top"
+        android:gravity="center"
+        android:text="@string/new_post"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_eighteen"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/sendInputText"
+        app:layout_constraintStart_toEndOf="@id/closeInputText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sendInputText"
+        style="@style/InputActivityButtonStyle"
+        android:layout_marginEnd="@dimen/default_value_ten"
+        android:contentDescription="@string/send_button_description"
+        android:src="@drawable/ic_up_arrow_inactive_svg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/editTextDivider"
+        style="@style/ThickDividerStyle"
+        android:layout_marginStart="@dimen/default_value_ten"
+        android:layout_marginTop="@dimen/input_margin_top"
+        android:layout_marginEnd="@dimen/default_value_ten"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hostName" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="20"
+        android:hint="@string/text_input_post_hint"
+        app:layout_constraintTop_toBottomOf="@id/editTextDivider"/>
+
+    <ProgressBar
+        android:id="@+id/inputProgressBar"
+        style="@style/ProgressBarStyle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

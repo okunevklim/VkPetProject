@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/universityType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_value_ten"
+        android:layout_marginTop="@dimen/default_value_ten"
+        android:layout_marginEnd="@dimen/default_value_ten"
+        android:text="@string/university"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_fourteen" />
+
+    <TextView
+        android:id="@+id/educationName"
+        style="@style/UniversityStyle"
+        tools:text="МГУ '22" />
+
+    <TextView
+        android:id="@+id/facultyName"
+        style="@style/UniversityStyle"
+        tools:text="Факультет биоинженерии и информатики" />
+
+    <TextView
+        android:id="@+id/specialtyName"
+        style="@style/UniversityStyle"
+        tools:text="Биоинженерия и информатика" />
+</LinearLayout>

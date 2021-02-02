@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/detailsLayout"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_zero"
+        android:layout_marginBottom="@dimen/default_value_ten"
+        app:layout_constraintBottom_toTopOf="@id/inputComment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/details_margin_start_thirty"
+        android:layout_marginEnd="@dimen/details_margin_end_fifty"
+        android:layout_marginBottom="@dimen/default_value_ten"
+        android:background="@drawable/bg_rounded_edittext"
+        android:hint="@string/text_input_hint"
+        android:textColorHint="@color/gray"
+        android:paddingStart="@dimen/details_padding_five"
+        android:paddingEnd="@dimen/details_padding_five"
+        android:textSize="@dimen/text_size_eighteen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/sendComment"
+        android:layout_width="@dimen/details_image_params"
+        android:layout_height="@dimen/details_image_params"
+        android:layout_marginEnd="@dimen/details_margin_end_fifteen"
+        android:layout_marginBottom="@dimen/default_value_ten"
+        android:src="@drawable/ic_send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/detailsProgressBar"
+        style="@style/ProgressBarStyle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

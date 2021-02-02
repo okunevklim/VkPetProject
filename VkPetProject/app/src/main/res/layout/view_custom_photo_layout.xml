@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="com.example.vk.views.PostPhotoLayout">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/postGroupPhoto"
+        android:layout_width="@dimen/group_photo_size"
+        android:layout_height="@dimen/group_photo_size"
+        app:border="false"
+        app:border_color="@color/white"
+        app:border_width="0.5dp"
+        app:shadow="false"
+        tools:src="@drawable/ic_group_photo" />
+
+    <TextView
+        android:id="@+id/postGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="@string/group_name" />
+
+    <ImageView
+        android:id="@+id/savePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/post_menu_btn_description"
+        android:src="@drawable/ic_download" />
+
+    <TextView
+        android:id="@+id/postDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="27 июня в 13:23" />
+
+    <TextView
+        android:id="@+id/postContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Всем привет!" />
+
+    <ImageView
+        android:id="@+id/postContentPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/post_photo_description"
+        tools:src="@drawable/ic_content_photo" />
+
+    <ImageView
+        android:id="@+id/likeButton"
+        style="@style/ButtonStyle"
+        android:contentDescription="@string/like_btn_description"
+        android:src="@drawable/ic_like_svg" />
+
+    <TextView
+        android:id="@+id/amountOfLikes"
+        style="@style/TextViewStyle"
+        tools:text="32" />
+
+
+    <ImageView
+        android:id="@+id/commentButton"
+        style="@style/ButtonStyle"
+        android:contentDescription="@string/comment_btn_description"
+        android:src="@drawable/ic_comment_svg" />
+
+    <TextView
+        android:id="@+id/amountOfComments"
+        style="@style/TextViewStyle"
+        tools:text="23" />
+
+
+    <ImageView
+        android:id="@+id/shareButton"
+        style="@style/ButtonStyle"
+        android:contentDescription="@string/share_btn_description"
+        android:src="@drawable/ic_repost_svg" />
+
+    <TextView
+        android:id="@+id/amountOfShares"
+        style="@style/TextViewStyle"
+        android:gravity="start"
+        tools:text="11" />
+
+    <ImageView
+        android:id="@+id/eye"
+        android:layout_width="@dimen/eye_params"
+        android:layout_height="@dimen/eye_params"
+        android:contentDescription="@string/post_view_description"
+        android:paddingTop="0.7dp"
+        android:src="@drawable/ic_view_svg" />
+
+    <TextView
+        android:id="@+id/counterOfViews"
+        style="@style/TextViewStyle"
+        android:gravity="start"
+        tools:text="@string/post_views" />
+
+</merge>

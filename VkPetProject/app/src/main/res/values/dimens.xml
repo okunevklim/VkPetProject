@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- default dimens -->
+    <dimen name="default_zero">0dp</dimen>
+    <dimen name="default_one">1dp</dimen>
+    <dimen name="default_value_five">5dp</dimen>
+    <dimen name="default_value_ten">10dp</dimen>
+    <dimen name="default_value_fifteen">15dp</dimen>
+    <dimen name="default_value_twenty">20dp</dimen>
+    <dimen name="default_value_thirty">30dp</dimen>
+
+    <!-- dimens for text -->
+    <dimen name="text_size_twelve">12sp</dimen>
+    <dimen name="text_size_fourteen">14sp</dimen>
+    <dimen name="text_size_sixteen">16sp</dimen>
+    <dimen name="text_size_eighteen">18sp</dimen>
+    <dimen name="text_size_twenty">20sp</dimen>
+    <dimen name="text_size_twenty_five">25sp</dimen>
+
+    <dimen name="image_view_height">30dp</dimen>
+    <dimen name="doubled_default_margin">32dp</dimen>
+    <dimen name="image_view_width">56dp</dimen>
+    <dimen name="group_photo_size">350dp</dimen>
+    <dimen name="eye_params">10dp</dimen>
+
+    <!-- dimens for activity_login.xml-->
+    <dimen name="login_view_small">50dp</dimen>
+    <dimen name="login_view_params">150dp</dimen>
+
+    <!-- dimens for fragment_details.xml-->
+    <dimen name="details_padding_five">5dp</dimen>
+    <dimen name="details_margin_end_fifteen">15dp</dimen>
+    <dimen name="details_image_params">24dp</dimen>
+    <dimen name="details_margin_start_thirty">30dp</dimen>
+    <dimen name="details_margin_end_fifty">50dp</dimen>
+
+    <!-- dimens for layout_error.xml-->
+    <dimen name="error_text_padding">5dp</dimen>
+    <dimen name="error_image_layout_height">72dp</dimen>
+    <dimen name="error_margin_bottom">100dp</dimen>
+    <dimen name="error_image_layout_width">115dp</dimen>
+    <dimen name="error_image_max_width">120dp</dimen>
+
+    <!-- dimens for layout_shimmer_post.xml-->
+    <dimen name="loading_margin_fifteen">15dp</dimen>
+    <dimen name="loading_text_margin_top">20dp</dimen>
+    <dimen name="loading_name_margin_top">25dp</dimen>
+    <dimen name="loading_photo_margin_end">30dp</dimen>
+    <dimen name="loading_view_margin_top">35dp</dimen>
+    <dimen name="loading_layout_params">75dp</dimen>
+    <dimen name="loading_text_margin_end">80dp</dimen>
+    <dimen name="loading_date_margin_end">100dp</dimen>
+
+    <!-- dimens for layout_item_comment.xml-->
+    <dimen name="comment_ic_like_params">14dp</dimen>
+    <dimen name="comment_photo_params">35dp</dimen>
+    <dimen name="comment_ic_like_margin_start">250dp</dimen>
+    <dimen name="comment_like_margin_start">290dp</dimen>
+
+
+    <!-- dimens for activity_input.xml-->
+    <dimen name="input_margin_top">5dp</dimen>
+    //<dimen name="input_image_params">20dp</dimen>
+
+    <!-- dimens for layout_post_details.xml -->
+    <dimen name="post_button_params">18dp</dimen>
+    <dimen name="comment_person_photo_diameter">50dp</dimen>
+    <dimen name="post_margin_fourteen">14dp</dimen>
+    <dimen name="post_value_twenty">20dp</dimen>
+    <dimen name="post_value_sixteen">16dp</dimen>
+    <dimen name="post_margin_divider">40dp</dimen>
+    <dimen name="post_download_params">20dp</dimen>
+
+    <!-- dimens for layout_profile.xml -->
+    <dimen name="profile_margin_fifteen">15dp</dimen>
+    <dimen name="profile_photo_params">80dp</dimen>
+    <dimen name="profile_margin_twenty">20dp</dimen>
+    <dimen name="profile_comment_logo_params">35dp</dimen>
+    <dimen name="profile_margin_fourteen">14dp</dimen>
+    <dimen name="profile_height_thirty">30dp</dimen>
+
+    <!-- dimens for layout_shimmer_profile_post.xml and shimmer_profile_info.xml -->
+    <dimen name="shimmer_profile_twenty">20dp</dimen>
+    <dimen name="shimmer_profile_margin_twenty_five">25dp</dimen>
+    <dimen name="shimmer_profile_thirty">30dp</dimen>
+    <dimen name="shimmer_profile_fifteen">15dp</dimen>
+    <dimen name="shimmer_profile_logo_params">50dp</dimen>
+    <dimen name="shimmer_profile_thirty_five">35dp</dimen>
+    <dimen name="shimmer_profile_domain_width">150dp</dimen>
+    <dimen name="shimmer_profile_one_hundred">100dp</dimen>
+
+    <!-- dimens for others -->
+    <dimen name="other_value_four">4dp</dimen>
+    <dimen name="other_value_fourteen">14dp</dimen>
+    <dimen name="other_value_twenty_four">24dp</dimen>
+    <dimen name="other_value_fifty">50dp</dimen>
+    <dimen name="other_value_fifty_six">56dp</dimen>
+    <dimen name="other_value_sixty_four">64dp</dimen>
+    <dimen name="other_value_two_hundred">200dp</dimen>
+    <dimen name="other_value_big">512dp</dimen>
+
+</resources>

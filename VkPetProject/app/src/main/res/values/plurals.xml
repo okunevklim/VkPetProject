@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="comment_plurals">
+        <item quantity="zero">%d КОММЕНТАРИЕВ</item>
+        <item quantity="one">%d КОММЕНТАРИЙ</item>
+        <item quantity="two">%d КОММЕНТАРИЯ</item>
+        <item quantity="few">%d КОММЕНТАРИЯ</item>
+        <item quantity="many">%d КОММЕНТАРИЕВ</item>
+        <item quantity="other">%d КОММЕНТАРИЕВ</item>
+    </plurals>
+</resources>

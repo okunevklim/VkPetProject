@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LoginButtonStyle">
+        <item name="android:layout_width">@dimen/login_view_params</item>
+        <item name="android:layout_height">@dimen/login_view_small</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ProfileDomainStyle">
+        <item name="background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_eighteen</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ProfileNameStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/default_value_ten</item>
+        <item name="android:layout_marginTop">@dimen/default_value_ten</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_twenty</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="PostDetailsNameStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/default_value_ten</item>
+        <item name="android:layout_marginTop">@dimen/default_value_ten</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_sixteen</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">@dimen/image_view_width</item>
+        <item name="android:layout_height">@dimen/image_view_height</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">@dimen/text_size_eighteen</item>
+        <item name="android:paddingTop">0.7dp</item>
+        <item name="android:layout_marginTop">@dimen/default_value_five</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ErrorTextStyle">
+        <item name="android:textSize">@dimen/default_value_fifteen</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LoadingTextStyle">
+        <item name="android:layout_height">@dimen/shimmer_profile_twenty</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="LoadingViewStyle">
+        <item name="android:layout_height">@dimen/loading_layout_params</item>
+        <item name="android:layout_width">@dimen/loading_layout_params</item>
+        <item name="android:layout_marginStart">@dimen/default_value_ten</item>
+    </style>
+
+    <style name="ThickDividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/default_one</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="FatDividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/default_value_five</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="InputActivityButtonStyle">
+        <item name="android:layout_width">@dimen/input_image_params</item>
+        <item name="android:layout_height">@dimen/input_image_params</item>
+        <item name="android:layout_marginTop">@dimen/default_value_ten</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="CareerTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_size_twelve</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginStart">@dimen/default_value_ten</item>
+        <item name="android:layout_marginEnd">@dimen/default_value_ten</item>
+    </style>
+
+    <style name="CareerNameStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/default_value_ten</item>
+        <item name="android:layout_marginTop">@dimen/default_value_ten</item>
+        <item name="android:layout_marginEnd">@dimen/default_value_ten</item>
+        <item name="android:textSize">@dimen/text_size_fourteen</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CommentStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="SchoolStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_fourteen</item>
+        <item name="android:layout_marginEnd">@dimen/default_value_ten</item>
+        <item name="android:layout_marginStart">@dimen/default_value_ten</item>
+    </style>
+
+    <style name="UniversityStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_fourteen</item>
+        <item name="android:layout_marginStart">@dimen/default_value_ten</item>
+        <item name="android:layout_marginEnd">@dimen/default_value_ten</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PostDetailsStyle">
+        <item name="android:layout_width">@dimen/default_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/default_value_ten</item>
+    </style>
+
+    <style name="ButtonDetailsStyle">
+        <item name="android:layout_width">@dimen/post_button_params</item>
+        <item name="android:layout_height">@dimen/post_button_params</item>
+        <item name="android:layout_marginTop">@dimen/post_margin_fourteen</item>
+    </style>
+
+    <style name="ButtonValueDetailsStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/post_margin_fourteen</item>
+        <item name="android:layout_marginStart">@dimen/default_value_five</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textSize">@dimen/text_size_fourteen</item>
+        <item name="android:textColor">@color/default_color</item>
+    </style>
+
+    <style name="ProfileFieldsStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:textSize">@dimen/text_size_fourteen</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="ProfileSectionStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:textSize">@dimen/text_size_eighteen</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginStart">@dimen/default_value_ten</item>
+    </style>
+
+    <style name="DialogTheme_transparent" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--You can set other style items also, such as animations and etc-->
+    </style>
+</resources>
